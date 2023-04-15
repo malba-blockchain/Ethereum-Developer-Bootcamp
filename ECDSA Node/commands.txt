@@ -1,0 +1,58 @@
+CLIENT
+cd client
+npm install
+npm run dev
+
+cd client
+npm i ethereum-cryptography
+
+
+cd client
+npm run dev
+
+SERVER
+
+cd server
+npm install
+nodemon index
+
+cd server
+npm i ethereum-cryptography
+
+cd server
+nodemon index
+
+cd server
+node scripts/generate.js
+
+node scripts/signer.js
+
+node scripts/recover.js
+
+
+Private key: 63241d45cea41a897b77d526802d390e7c1844acbc8775c55ab0d603d9374e75
+Public key: 04365f5fd443d36fba1699ad86c890175534abdde0e20a9af81db2f24ed558238789ecce2cd6f68080fed2c282750b1ec764254324471bf6773ce9b4b424c58936
+
+Private key: fb82e08a1cf71fad459a30c303fbb1da825873e8ebc97e77328c7e0c299b88c7
+Public key: 04fc1700d004f8bad0e32a685473297cbd0b5d902d99a18dfd715188f50aa4923dce4ba3956330ac4afb137da17189a2675fd64fad4f8d31a805a18a92cbd3c517
+
+Private key: 413e73c0f546125e7c79c942debe5935681af1a07106b98509688cf7353e8b57
+Public key: 04b81b6146bb01db2582570cb8895b793105de3316391eae64765fdca0544609ca599b5809e4ead343b03012844bdc9dfcd8f5bb4a042d7814e1ace2ff5b4cb026
+
+
+
+
+SIGNATURE
+30450221009233f975ae394d644171700b7e39dedf0dca8bc3e283116b01551099fd4fc4800220096e6245d582b0775f0cd791d33234936d7414715e6a0c436e756a4c84b627e80
+Recovery bit: 0
+
+304402207cd81ac1bd8e33251edafc50e9b4bcd17ec0c53301234a4f31f507b2f1699035022013d0bd81fe1fb1639438aa6e9a4c1b81bf72d4e054e9fa646d31f5b32b38d3c01
+Recovery bit: 1
+
+
+Send a signed transaction to the server, the server should recover the public key from the signature and only allow the transaction if it belongs to a real public key that actually has those funds
+
+
+1. sign the message of what you want to send using the signer script, do it locally
+2. send that signature using the parameter in the web application attach the recovery bit at the end of the signature
+3. enjoy
