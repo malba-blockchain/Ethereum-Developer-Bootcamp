@@ -1,0 +1,25 @@
+node client/index
+
+
+node server/index
+
+
+localhost:1225
+
+
+node utils/example.js
+
+
+
+
+
+
+-----------ToDo-----------
+
+Client = prover. They are the ones trying to probe that the name is on the list
+Params: Name + proof
+
+
+Server = verifier. Take the clients proof and using minimal information, verify that the name sent from the client is actually in the list
+
+Server: Root
