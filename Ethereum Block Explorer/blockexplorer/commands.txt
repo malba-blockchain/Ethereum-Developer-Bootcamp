@@ -1,0 +1,47 @@
+npm start
+
+
+
+
+function App() {
+  const [blockNumber, setBlockNumber] = useState();
+
+  useEffect(() => {
+    async function getBlockNumber() {
+      setBlockNumber(await alchemy.core.getBlockNumber());
+    }
+
+    getBlockNumber();
+    
+  });
+
+  return <div className="App">Block Number: {blockNumber}</div>;
+}
+
+
+function App() {
+  const [blockNumber, setBlockNumber] = useState();
+  const [blockWithTransactions, setBlockWithTransactions] = useState();
+
+  useEffect(() => {
+    async function getBlockData() {
+      setBlockNumber(await alchemy.core.getBlockNumber());
+      setBlockWithTransactions(await alchemy.core.getBlockWithTransactions(blockNumber));
+    }
+
+    getBlockData();
+  }, [blockNumber]);
+
+  return (
+    <div className="App">
+      <p>Block Number: {blockNumber}</p>
+      <p>Block Hash Number: {blockWithTransactions.hash}</p>
+      <p>Parent Hash: {blockWithTransactions.parentHash}</p> 
+      <p>Block timestamp: {blockWithTransactions.timestamp}</p> 
+      <p>Block Nonce: {blockWithTransactions.nonce}</p> 
+      <p>Block Difficulty: {blockWithTransactions.difficulty}</p> 
+    </div>
+  );
+}
+
+https://docs.alchemy.com/reference/sdk-getblockwithtransactions?
