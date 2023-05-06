@@ -1,0 +1,7 @@
+npm init -y
+npm install --save-dev hardhat
+npx hardhat
+Create a JavaScript project
+npm install --save-dev "hardhat@^2.14.0" "@nomicfoundation/hardhat-toolbox@^2.0.0
+
+npx hardhat test
