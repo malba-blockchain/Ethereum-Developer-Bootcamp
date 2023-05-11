@@ -1,0 +1,16 @@
+npx hardhat test
+
+npx hardhat test test/game1Test.js
+
+
+npx hardhat test test/game2Test.js
+
+
+npx hardhat test test/game3Test.js
+
+npx hardhat test test/game4Test.js
+
+
+npx hardhat test test/game5Test.js
+
+

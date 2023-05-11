@@ -1,0 +1,14 @@
+npm i
+
+npx hardhat node
+
+npx hardhat run scripts/deploy.js --network localhost
+
+npx hardhat run scripts/win1.js --network localhost
+
+npx hardhat run scripts/win2.js --network localhost
+
+
+npx hardhat run scripts/win5.js --network localhost
+
+D:\USER\Downloads\0xCOURSES\Alchemy University\Ethereum Developer Bootcamp\Ethereum-Developer-Bootcamp\Local-Hardhat-Games

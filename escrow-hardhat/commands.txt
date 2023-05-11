@@ -1,0 +1,30 @@
+cd path/to/escrow/folder && npm install && cd app && npm install
+
+cd D:\USER\Downloads\0xCOURSES\Alchemy University\Ethereum Developer Bootcamp\Ethereum-Developer-Bootcamp\escrow-hardhat
+
+npx hardhat node [XXXXXXX]
+
+
+This guide for a full set up of Hardhat with a browser wallet
+
+npx hardhat compile
+
+https://www.web3.university/article/how-to-build-a-react-dapp-with-hardhat-and-metamask
+
+
+cd app
+
+npm start [XXXXXXX]
+
+
+------------------------DONE------------------------
+Make the wei to ETH conversion
+
+------------------------ToDo------------------------
+
+Create the case where you dont even need a third person to approve the transfer
+
+Persistence: SHow the smart contract values
+
+Run it on a testnet
+
