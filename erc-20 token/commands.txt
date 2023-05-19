@@ -1,0 +1,10 @@
+npm init -y
+npm install dotenv
+npm install --save-dev hardhat
+npx hardhat
+
+
+npm install @openzeppelin/contracts
+
+
+npx hardhat run scripts/deploy.js --network sepolia
