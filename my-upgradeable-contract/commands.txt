@@ -1,0 +1,40 @@
+npm init -y
+
+npm install --save-dev hardhat
+
+npm install @nomiclabs/hardhat-ethers @nomiclabs/hardhat-waffle @openzeppelin/contracts-upgradeable @openzeppelin/hardhat-upgrades
+
+npm install @nomiclabs/hardhat-etherscan@3.0.1
+
+npm install dotenv
+
+npx hardhat
+
+npm install --save-dev "hardhat@^2.14.0" "@nomicfoundation/hardhat-toolbox@^2.0.0"
+
+npx hardhat run scripts/deployProxy.js --network sepolia
+
+
+Proxy contract address: 0x410bF7e2849e5ff00CcC394B128714fF41Eab597
+Implementation contract address: 0x1082ccB4561b77153237CA6E34ADbC52CF7AD0e3
+
+
+npx hardhat verify --network sepolia YOUR_VENDINGMACHINEV1_IMPLEMENTATION_ADDRESS
+
+npx hardhat verify --network sepolia 0x1082ccB4561b77153237CA6E34ADbC52CF7AD0e3
+
+
+npx hardhat run scripts/upgradeProxy.js --network sepolia
+
+
+Implementation contract address: 0xefBcc2104CFbb2adb78761Bb8f56165d6209c4cd
+
+npx hardhat verify --network sepolia 0xefBcc2104CFbb2adb78761Bb8f56165d6209c4cd
+
+
+npx hardhat run scripts/upgradeProxyV3.js --network sepolia
+
+Implementation contract address: 0x39Ef36A03251C17aEAaD644F1AC017A79d564490
+
+
+npx hardhat verify --network sepolia 0x39Ef36A03251C17aEAaD644F1AC017A79d564490

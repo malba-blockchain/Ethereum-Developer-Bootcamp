@@ -1,3 +1,10 @@
 npm install --save-dev hardhat
 
+npm install dotenv
+
+npx hardhat test
+
 npx hardhat run scripts/deploy.js --network sepolia
+
+
+Governor deployed to 0x0eAd4AB9cd8a1a255BB1Ca8313C72B38Db5B32A8 Token deployed to 0xd3C053894D27a58cE3c5B830E59C73bE0abb9AF7

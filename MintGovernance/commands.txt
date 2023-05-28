@@ -1,0 +1,7 @@
+npm i
+npx hardhat test
+npm install @openzeppelin/test-helpers
+
+npx hardhat run scripts/deploy.js --network sepolia
+
+npx hardhat run scripts/deployExtended.js --network sepolia
